@@ -20,7 +20,7 @@ export default {
   methods: {
     goLogin() {
       console.log('goLogin');
-      axios.get('http://172.30.1.56:8080/login'+'/'+this.userId + '/'+this.userPw)
+      axios.get('http://3.19.69.215:8080/login'+'/'+this.userId + '/'+this.userPw)
           .then(response => {
             console.log(typeof response.data);
             if(response.data)  {
